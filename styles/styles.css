@@ -287,3 +287,18 @@ dl,
 dd {
   margin: 0;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
