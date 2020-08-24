@@ -350,9 +350,10 @@ header ul {
 }
 
 header ul a {
-  font-size: 2.3rem;
+  font-size: 2rem;
   margin-left: 80px;
   color: #000;
+  text-transform: uppercase;
 }
 
 header .headerImage {
@@ -381,11 +382,12 @@ header .headerImage p {
   display: -ms-flexbox;
   display: flex;
   padding-top: 250px;
+  margin-bottom: 250px;
 }
 
 .profile .intro {
   width: 50%;
-  padding-top: 32%;
+  padding-top: 30%;
 }
 
 .profile .intro h2 {
@@ -395,12 +397,12 @@ header .headerImage p {
 
 .profile .intro p {
   line-height: 25px;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .profile img {
   width: 50%;
-  padding: 20px;
+  padding-right: 20px;
 }
 
 .about {
@@ -457,11 +459,15 @@ header .headerImage p {
 
 .skills {
   text-align: center;
-  padding: 100px 0;
+  margin-bottom: 250px;
+  border: 5px solid #0f0f0f;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 0 60px #c0ff33;
+          box-shadow: 0 0 60px #c0ff33;
 }
 
 .skills h2 {
-  padding-bottom: 80px;
+  padding: 80px 0 40px;
   font-size: 5rem;
 }
 
@@ -474,11 +480,7 @@ header .headerImage p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 5px solid #0f0f0f;
-  border-radius: 40px;
-  -webkit-box-shadow: 0 0 60px #c0ff33;
-          box-shadow: 0 0 60px #c0ff33;
-  padding: 60px 20px;
+  padding: 0 40px 80px;
 }
 
 .skillContainer li {
@@ -508,6 +510,95 @@ header .headerImage p {
   font-size: 10rem;
   color: #b4b4b4;
   margin-bottom: 15px;
+}
+
+.projects {
+  margin-bottom: 250px;
+}
+
+.projects h2 {
+  text-align: center;
+}
+
+.projects .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.projects .project:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: right;
+}
+
+.projects .project .projectContent {
+  padding: 10px 40px;
+}
+
+.projects .project h3 {
+  color: #c0ff33;
+  padding: 15px 0;
+}
+
+.contact {
+  margin-bottom: 250px;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  margin: 0 15%;
+}
+
+.container .socialContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 80px 0 60px;
+}
+
+.container .socialContainer i {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.container form input[type="text"],
+.container form input[type="email"],
+.container form textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #c0ff33;
+  background-color: #0f0f0f;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.container form .textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container form textarea {
+  resize: none;
+  display: block;
+  height: 200px;
 }
 
 footer {

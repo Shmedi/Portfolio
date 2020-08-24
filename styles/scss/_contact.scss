@@ -1,0 +1,45 @@
+.contact {
+  margin-bottom: 250px;
+  h2 {
+    text-align: center;
+  }
+}
+
+.container {
+  text-align: center;
+  margin: 0 15%;
+  .socialContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px 0 60px;
+    i {
+      font-size: 4rem;
+      color: $textColor;
+    }
+  }
+
+  form {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      box-sizing: border-box;
+      border: 2px solid $accentColor;
+      background-color: $primaryColor;
+      color: $textColor;
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+    }
+
+    .textarea {
+      display: flex;
+      justify-content: center;
+    }
+
+    textarea {
+      resize: none;
+      display: block;
+      height: 200px;
+    }
+  }
+}
