@@ -592,8 +592,8 @@ header .headerNav .toggle {
 }
 
 header .headerNav .toggle:checked ~ .toggleContainer .buttonToggle {
-  -webkit-box-shadow: 0 0 0 450px rgba(0, 0, 0, 0.8), inset 0 0 0 20px rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 0 450px rgba(0, 0, 0, 0.8), inset 0 0 0 20px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 0 400px rgba(0, 0, 0, 0.8), inset 0 0 0 20px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 0 400px rgba(0, 0, 0, 0.8), inset 0 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 header .headerNav .toggle:checked ~ .toggleContainer .buttonToggle:before {
