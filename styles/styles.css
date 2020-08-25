@@ -680,7 +680,7 @@ header .headerImage p {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .projects .project:nth-child(2n) {
@@ -930,6 +930,7 @@ footer p {
   }
   .profile .intro p {
     font-size: 1.8rem;
+    text-align: left;
   }
   .skills h2 {
     padding: 40px 0;
@@ -953,9 +954,6 @@ footer p {
   .contact {
     margin-bottom: 150px;
   }
-}
-
-@media (max-width: 358px) {
   .container form .buttonStyle {
     width: 100%;
   }
@@ -964,5 +962,8 @@ footer p {
   }
   .projects .project button:nth-child(2n) {
     margin-left: 0;
+  }
+  .projects .project .description {
+    text-align: left;
   }
 }
