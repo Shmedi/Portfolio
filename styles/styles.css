@@ -1180,6 +1180,9 @@ header .headerImage p {
     width: 100%;
     padding: 0;
   }
+  .profile .profileImg img {
+    padding-top: 0;
+  }
   .profile .intro {
     width: 100%;
     padding-top: 40px;
@@ -1214,7 +1217,7 @@ header .headerImage p {
     font-size: 3.5rem;
   }
   .profile {
-    padding-top: 0;
+    padding-top: 100px;
   }
   .profile img {
     width: 100%;
@@ -1241,6 +1244,9 @@ header .headerImage p {
   }
   .about .triangleContainer {
     display: none;
+  }
+  .profile {
+    padding-top: 50px;
   }
   .profile .intro p {
     font-size: 1.8rem;
