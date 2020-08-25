@@ -21,7 +21,7 @@
   }
 
   .projects {
-    .project {
+    .projectItem {
       img {
         width: 250%;
       }
@@ -60,7 +60,7 @@
   }
 
   .projects {
-    .project {
+    .projectItem {
       display: block;
       text-align: center;
       &:nth-child(2n) {
@@ -151,7 +151,7 @@
   }
 
   .projects {
-    .project {
+    .projectItem {
       button {
         width: 100%;
         &:nth-child(2n) {

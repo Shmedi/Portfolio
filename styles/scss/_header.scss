@@ -17,14 +17,14 @@ header {
 
     // Hamburger Menu Start
 
-    #toggle {
+    .toggle {
       display: none;
     }
 
-    #toggle:checked {
-      & ~ .toggle-container .button-toggle {
-        box-shadow: 0 0 0 550px rgba(0, 0, 0, 0.9),
-          inset 0 0 0 20px rgba(0, 0, 0, 0.9);
+    .toggle:checked {
+      & ~ .toggleContainer .buttonToggle {
+        box-shadow: 0 0 0 450px rgba(0, 0, 0, 0.8),
+          inset 0 0 0 20px rgba(0, 0, 0, 0.8);
 
         &:before {
           transform: translateY(-50%) rotate(45deg) scale(1);
@@ -40,7 +40,7 @@ header {
         pointer-events: auto;
         transform: translate(50px, 50px);
 
-        .nav-item {
+        .navItem {
           color: $textColor;
           letter-spacing: 0;
           height: 40px;
@@ -57,12 +57,12 @@ header {
       }
     }
 
-    .button-toggle {
+    .buttonToggle {
       position: absolute;
       display: inline-block;
       width: 20px;
       height: 20px;
-      margin: 25px;
+      margin: 25px 0 25px 2px;
       background-color: transparent;
       border: none;
       cursor: pointer;
@@ -98,19 +98,19 @@ header {
 
     .nav {
       display: inline-block;
-      margin: 25px 25px 20px;
+      margin: 20px 0;
       pointer-events: none;
       transition: $transition-duration;
     }
 
-    .nav-item {
+    .navItem {
       position: relative;
       float: left;
       clear: both;
       color: transparent;
       font-size: 2rem;
       letter-spacing: -10px;
-      height: 7px;
+      height: 8px;
       line-height: 7px;
       text-transform: uppercase;
       white-space: nowrap;
@@ -122,7 +122,7 @@ header {
       }
 
       &:nth-child(2) {
-        letter-spacing: -7px;
+        letter-spacing: -8px;
       }
 
       &:nth-child(n + 4) {
