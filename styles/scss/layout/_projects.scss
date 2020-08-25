@@ -7,7 +7,7 @@
   .projectItem {
     display: flex;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     margin-top: 150px;
     &:nth-child(2n) {
       flex-direction: row-reverse;
@@ -15,11 +15,16 @@
     }
 
     .projectContent {
+      width: 50%;
       padding: 10px 50px;
     }
 
     .languages {
       word-spacing: 8px;
+    }
+
+    .imgContainer {
+      width: 50%;
     }
 
     h3 {

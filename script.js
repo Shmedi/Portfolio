@@ -1,6 +1,5 @@
 $(function () {
-  $(document).on("click", 'a[href^="#"]', function (event) {
-    event.preventDefault();
+  $(document).on("click", 'a[href^="#"]', function () {
     $("html, body")
       .stop()
       .animate(

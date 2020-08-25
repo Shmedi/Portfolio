@@ -834,13 +834,22 @@ header .headerImage p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 250px;
+  padding-top: 150px;
   margin-bottom: 200px;
+}
+
+.profile .profileImg {
+  width: 50%;
+  padding-right: 15px;
+}
+
+.profile .profileImg img {
+  padding-top: 160px;
 }
 
 .profile .intro {
   width: 50%;
-  padding-top: 28%;
+  padding-top: 35%;
 }
 
 .profile .intro h2 {
@@ -851,11 +860,6 @@ header .headerImage p {
   line-height: 25px;
   font-size: 2.3rem;
   word-spacing: 3px;
-}
-
-.profile img {
-  width: 60%;
-  padding-right: 20px;
 }
 
 .about {
@@ -985,7 +989,7 @@ header .headerImage p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  max-width: 100%;
   margin-top: 150px;
 }
 
@@ -998,11 +1002,16 @@ header .headerImage p {
 }
 
 .projects .projectItem .projectContent {
+  width: 50%;
   padding: 10px 50px;
 }
 
 .projects .projectItem .languages {
   word-spacing: 8px;
+}
+
+.projects .projectItem .imgContainer {
+  width: 50%;
 }
 
 .projects .projectItem h3 {
@@ -1160,31 +1169,39 @@ header .headerImage p {
   font-size: 1.2rem;
 }
 
-@media (max-width: 1096px) {
+@media (max-width: 1000px) {
   .profile {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .profile .profileImg {
+    width: 100%;
+    padding: 0;
+  }
   .profile .intro {
     width: 100%;
     padding-top: 40px;
     text-align: center;
   }
-  .profile img {
-    width: 75%;
-    padding: 0;
-    margin: 0 auto;
-  }
   .about .triangleContainer {
     top: -8%;
   }
-  .projects .projectItem img {
-    width: 250%;
+  .projects .projectItem {
+    display: block;
+    text-align: center;
+  }
+  .projects .projectItem:nth-child(2n) {
+    text-align: center;
+  }
+  .projects .projectItem .imgContainer {
+    width: 100%;
+    padding-bottom: 40px;
   }
   .projects .projectItem .projectContent {
-    padding: 0 20px;
+    width: 100%;
+    padding: 0;
   }
 }
 
@@ -1196,25 +1213,14 @@ header .headerImage p {
   header .headerImage p {
     font-size: 3.5rem;
   }
+  .profile {
+    padding-top: 0;
+  }
   .profile img {
     width: 100%;
   }
   .skillContainer li {
     padding: 20px;
-  }
-  .projects .projectItem {
-    display: block;
-    text-align: center;
-  }
-  .projects .projectItem:nth-child(2n) {
-    text-align: center;
-  }
-  .projects .projectItem img {
-    width: 100%;
-    padding-bottom: 40px;
-  }
-  .projects .projectItem .projectContent {
-    padding: 0;
   }
   .container {
     margin: 0;
@@ -1235,9 +1241,6 @@ header .headerImage p {
   }
   .about .triangleContainer {
     display: none;
-  }
-  .profile {
-    padding-top: 100px;
   }
   .profile .intro p {
     font-size: 1.8rem;
