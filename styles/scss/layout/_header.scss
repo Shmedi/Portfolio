@@ -15,7 +15,7 @@ header {
       border-bottom: 3px solid $accentColor;
     }
 
-    // Hamburger Menu Start
+    // Drop-down menu start
 
     .toggle {
       display: none;
@@ -49,6 +49,16 @@ header {
           opacity: 1;
           transform: scaleY(1);
           transition: $transition-duration, opacity 0.1s;
+
+          @for $i from 1 through $items {
+            &:nth-child(#{$i}) {
+              $delay: ($items - $i) * $transition-delay;
+              transition-delay: $delay;
+              &:before {
+                transition-delay: $delay;
+              }
+            }
+          }
 
           &:before {
             opacity: 0;
@@ -117,6 +127,16 @@ header {
       transform: scaleY(0.2);
       transition: $transition-duration, opacity 1s;
 
+      @for $i from 1 through $items {
+        &:nth-child(#{$i}) {
+          $delay: ($i - 1) * $transition-delay;
+          transition-delay: $delay;
+          &:before {
+            transition-delay: $delay;
+          }
+        }
+      }
+
       &:nth-child(1) {
         letter-spacing: -10px;
       }
@@ -145,7 +165,7 @@ header {
     }
   }
 
-  // Hamburger Menu End
+  // Drop-down menu end
 
   .headerImage {
     background: url(../images/headerImage.jpg);

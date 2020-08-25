@@ -12,6 +12,17 @@ html {
   border-bottom: 3px solid $accentColor;
 }
 
+body {
+  background-color: $primaryColor;
+  color: $textColor;
+  font-family: $baseFont;
+  font-size: 1.8rem;
+}
+
+section {
+  padding-top: 55px;
+}
+
 a,
 button,
 input,
@@ -20,12 +31,17 @@ i {
   transition: all 0.3s;
 }
 
-body {
-  background-color: $primaryColor;
-  color: $textColor;
-  font-family: $baseFont;
-  font-size: 1.8rem;
+h1,
+h2,
+h3 {
+  font-family: $headerFont;
+  text-transform: uppercase;
 }
+
+h2 {
+  font-size: 3.5rem;
+}
+
 li {
   list-style: none;
 }
@@ -38,15 +54,4 @@ img {
   display: block;
   width: 100%;
   height: auto;
-}
-
-h1,
-h2,
-h3 {
-  font-family: $headerFont;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 3.5rem;
 }
