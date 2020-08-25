@@ -1,0 +1,138 @@
+@media (max-width: 1096px) {
+  .profile {
+    flex-direction: column;
+    .intro {
+      width: 100%;
+      padding-top: 40px;
+      text-align: center;
+    }
+
+    img {
+      width: 75%;
+      padding: 0;
+      margin: 0 auto;
+    }
+  }
+
+  .about {
+    .triangleContainer {
+      top: -5%;
+    }
+  }
+
+  .projects {
+    .project {
+      img {
+        width: 250%;
+      }
+
+      .projectContent {
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  header {
+    .headerImage {
+      h1 {
+        font-size: 6rem;
+        padding-top: 180px;
+      }
+
+      p {
+        font-size: 3.5rem;
+      }
+    }
+  }
+
+  .profile {
+    img {
+      width: 100%;
+    }
+  }
+
+  .skillContainer {
+    li {
+      padding: 20px;
+    }
+  }
+
+  .projects {
+    .project {
+      display: block;
+      text-align: center;
+      &:nth-child(2n) {
+        text-align: center;
+      }
+      img {
+        width: 100%;
+        padding-bottom: 40px;
+      }
+
+      .projectContent {
+        padding: 0;
+      }
+    }
+  }
+
+  .container {
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    .headerImage {
+      text-align: center;
+      h1 {
+        font-size: 4.3rem;
+        padding-top: 200px;
+      }
+
+      p {
+        font-size: 2.4rem;
+        padding: 0;
+      }
+    }
+  }
+
+  .about {
+    .triangleContainer {
+      display: none;
+    }
+  }
+
+  .profile {
+    padding-top: 100px;
+  }
+
+  .profile,
+  .skills,
+  .projects,
+  .contact {
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    form {
+      .buttonStyle {
+        width: 100%;
+      }
+    }
+  }
+
+  .projects {
+    .project {
+      button {
+        width: 100%;
+        &:nth-child(2n) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

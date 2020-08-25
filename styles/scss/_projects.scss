@@ -6,6 +6,7 @@
 
   .project {
     display: flex;
+    align-items: center;
     width: 100%;
     margin-top: 100px;
     &:nth-child(2n) {
@@ -14,12 +15,32 @@
     }
 
     .projectContent {
-      padding: 10px 40px;
+      padding: 10px 50px;
+    }
+
+    .languages {
+      word-spacing: 8px;
     }
 
     h3 {
+      font-size: 3rem;
       color: $accentColor;
       padding: 15px 0;
+    }
+
+    button {
+      @include buttonStyle($accentColor, 140px);
+      &:nth-child(2n) {
+        margin-left: 20px;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        cursor: pointer;
+        letter-spacing: 0.1em;
+        transform: scale(1.1);
+      }
     }
   }
 }

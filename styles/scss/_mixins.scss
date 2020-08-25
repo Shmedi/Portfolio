@@ -1,0 +1,12 @@
+@mixin buttonStyle($color, $width) {
+  padding: 10px 0;
+  width: $width;
+  margin-top: 20px;
+  font-family: $baseFont;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border: none;
+  color: $altTextColor;
+  background-color: $color;
+  border-radius: 10px;
+}

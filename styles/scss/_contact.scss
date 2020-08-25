@@ -15,6 +15,12 @@
     i {
       font-size: 4rem;
       color: $textColor;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $accentColor;
+        transform: scale(1.2);
+      }
     }
   }
 
@@ -40,6 +46,17 @@
       resize: none;
       display: block;
       height: 200px;
+    }
+
+    .buttonStyle {
+      @include buttonStyle($iconColor, 250px);
+      &:hover,
+      &:focus,
+      &:active {
+        cursor: pointer;
+        letter-spacing: 0.1em;
+        transform: scale(1.1);
+      }
     }
   }
 }

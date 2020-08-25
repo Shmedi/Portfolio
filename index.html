@@ -26,22 +26,20 @@
           <div class="logoContainer">
             <img src="./images/logo.png" alt="Geometric spiral star logo" />
           </div>
-          <nav>
-            <ul>
-              <li>
-                <a href="">About</a>
-              </li>
-              <li>
-                <a href="">Skills</a>
-              </li>
-              <li>
-                <a href="">Projects</a>
-              </li>
-              <li>
-                <a href="">Contact</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="navContainer">
+            <input id="toggle" type="checkbox" />
+
+            <label class="toggle-container" for="toggle">
+              <span class="button button-toggle"></span>
+            </label>
+
+            <nav class="nav">
+              <a class="nav-item" href="">About</a>
+              <a class="nav-item" href="">Skills</a>
+              <a class="nav-item" href="">Projects</a>
+              <a class="nav-item" href="">Contact</a>
+            </nav>
+          </div>
         </div>
       </div>
       <div class="headerImage">
@@ -101,7 +99,7 @@
           <h2><span class="underline">Projects</span></h2>
 
           <div class="project itemOne">
-            <img src="" alt="" />
+            <img src="./images/supremeFries.svg" alt="" />
             <div class="projectContent">
               <p class="languages">HTML | SCSS | JavaScript | jQuery</p>
               <h3>Supreme Fries</h3>
@@ -119,10 +117,10 @@
           </div>
 
           <div class="project itemTwo">
-            <img src="" alt="" />
+            <img src="./images/supremeFries.svg" alt="" />
             <div class="projectContent">
               <p class="languages">
-                HTML | SCSS | JavaScript | jQuery | Paired-Programming
+                HTML | SCSS | Paired-Programming | jQuery | API
               </p>
               <h3>Salut</h3>
               <p>
@@ -139,9 +137,9 @@
           </div>
 
           <div class="project itemThree">
-            <img src="" alt="" />
+            <img src="./images/spltr.svg" alt="" />
             <div class="projectContent">
-              <p class="languages">React | CSS | JavaScript</p>
+              <p class="languages">React | CSS | JavaScript | Firebase</p>
               <h3>Spltr</h3>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
@@ -157,9 +155,11 @@
           </div>
 
           <div class="project itemFour">
-            <img src="" alt="" />
+            <img src="./images/spltr.svg" alt="" />
             <div class="projectContent">
-              <p class="languages">React | SCSS | JavaScript | Collaboration</p>
+              <p class="languages">
+                React | SCSS | JavaScript | Firebase & API | Group Collaboration
+              </p>
               <h3>Moribus</h3>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas

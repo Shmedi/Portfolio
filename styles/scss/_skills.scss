@@ -21,6 +21,10 @@
     align-items: center;
     padding: 40px;
     color: $accentColor;
+    &:hover {
+      transform: scale(1.2);
+    }
+
     img {
       filter: grayscale(100%);
       width: auto;

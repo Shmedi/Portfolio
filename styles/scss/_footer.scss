@@ -1,9 +1,14 @@
 footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   padding: 10px 0;
   .logoContainer {
     width: 50px;
+    margin: 0 5%;
+  }
+
+  p {
+    font-size: 1.2rem;
   }
 }

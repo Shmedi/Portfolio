@@ -12,6 +12,14 @@ html {
   border-bottom: 3px solid $accentColor;
 }
 
+a,
+button,
+input,
+li,
+i {
+  transition: all 0.3s;
+}
+
 body {
   background-color: $primaryColor;
   color: $textColor;
@@ -20,9 +28,10 @@ body {
 }
 li {
   list-style: none;
-  a {
-    text-decoration: none;
-  }
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
