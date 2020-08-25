@@ -106,6 +106,32 @@
 
   .profile {
     padding-top: 100px;
+    .intro {
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .skills {
+    h2 {
+      padding: 40px 0;
+    }
+  }
+
+  .skillContainer {
+    padding: 0 20px 40px;
+    li {
+      padding: 10px;
+      font-size: 0;
+      i {
+        font-size: 4rem;
+      }
+
+      img {
+        height: 40px;
+      }
+    }
   }
 
   .profile,
@@ -116,7 +142,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 358px) {
   .container {
     form {
       .buttonStyle {

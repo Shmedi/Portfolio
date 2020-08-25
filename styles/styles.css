@@ -331,6 +331,10 @@ h3 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: 3.5rem;
+}
+
 header {
   background-color: #f8f8f8;
 }
@@ -534,7 +538,6 @@ header .headerImage p {
 }
 
 .profile .intro h2 {
-  font-size: 3rem;
   padding-bottom: 40px;
 }
 
@@ -612,7 +615,7 @@ header .headerImage p {
 
 .skills h2 {
   padding: 80px 0 40px;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .skillContainer {
@@ -788,6 +791,22 @@ header .headerImage p {
   height: 200px;
 }
 
+.container form ::-webkit-input-placeholder {
+  font-family: "Varela Round", sans-serif;
+}
+
+.container form :-ms-input-placeholder {
+  font-family: "Varela Round", sans-serif;
+}
+
+.container form ::-ms-input-placeholder {
+  font-family: "Varela Round", sans-serif;
+}
+
+.container form ::placeholder {
+  font-family: "Varela Round", sans-serif;
+}
+
 .container form .buttonStyle {
   padding: 10px 0;
   width: 250px;
@@ -909,6 +928,25 @@ footer p {
   .profile {
     padding-top: 100px;
   }
+  .profile .intro p {
+    font-size: 1.8rem;
+  }
+  .skills h2 {
+    padding: 40px 0;
+  }
+  .skillContainer {
+    padding: 0 20px 40px;
+  }
+  .skillContainer li {
+    padding: 10px;
+    font-size: 0;
+  }
+  .skillContainer li i {
+    font-size: 4rem;
+  }
+  .skillContainer li img {
+    height: 40px;
+  }
   .profile,
   .skills,
   .projects,
@@ -917,7 +955,7 @@ footer p {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 358px) {
   .container form .buttonStyle {
     width: 100%;
   }

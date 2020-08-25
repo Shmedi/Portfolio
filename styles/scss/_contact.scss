@@ -48,6 +48,10 @@
       height: 200px;
     }
 
+    ::placeholder {
+      font-family: $baseFont;
+    }
+
     .buttonStyle {
       @include buttonStyle($iconColor, 250px);
       &:hover,
