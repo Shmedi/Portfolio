@@ -9,6 +9,7 @@
     align-items: center;
     max-width: 100%;
     margin-top: 150px;
+    opacity: 1;
     &:nth-child(2n) {
       flex-direction: row-reverse;
       text-align: right;

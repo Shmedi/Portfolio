@@ -51,15 +51,17 @@
     <header>
       <div class="wrapper">
         <div class="headerNav">
+          <!-- Logo -->
           <div class="logoContainer">
-            <img src="./images/logo.png" alt="Geometric logo" />
+            <img class="rotate" src="./images/logo.png" alt="Geometric logo" />
           </div>
+
           <!-- Drop-down Navigation -->
           <div class="navContainer">
             <input class="toggle" id="toggle" name="toggle" type="checkbox" />
 
             <label class="toggleContainer" for="toggle">
-              <span role="button" class="buttonToggle"></span>
+              <span role="button" tabindex="0" class="buttonToggle"></span>
             </label>
 
             <nav class="nav">
@@ -71,6 +73,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Header Banner -->
       <div class="headerImage">
         <div class="wrapper">
           <h1 class="logoRight">Eduard Tupy</h1>
@@ -136,18 +140,45 @@
           <div class="skills">
             <h2><span class="underline">Skills</span></h2>
             <ul class="skillContainer">
-              <li><i class="fab fa-html5"></i>HTML5</li>
-              <li><i class="fab fa-css3-alt"></i>CSS3</li>
-              <li><i class="fab fa-sass"></i>SCSS</li>
-              <li><i class="fab fa-js"></i>JavaScript</li>
-              <li><img src="./images/jQueryIcon.svg" />jQuery</li>
-              <li><i class="fab fa-react"></i>React</li>
-              <li><img src="./images/firebaseIcon.svg" />Firebase</li>
-              <li><i class="fab fa-git-alt"></i>Git</li>
-              <li><i class="fab fa-github"></i>Github</li>
-              <li><img src="./images/VSIcon.svg" />VS Code</li>
-              <li><i class="fas fa-universal-access"></i>A11y</li>
-              <li><i class="fas fa-tablet-alt"></i>Responsive</li>
+              <li><i class="fab fa-html5" aria-label="HTML5 icon"></i>HTML5</li>
+              <li>
+                <i class="fab fa-css3-alt" aria-label="CSS3 icon"></i>CSS3
+              </li>
+              <li><i class="fab fa-sass" aria-label="SCSS icon"></i>SCSS</li>
+              <li>
+                <i class="fab fa-js" aria-label="JavaScript icon"></i>JavaScript
+              </li>
+              <li>
+                <img src="./images/jQueryIcon.svg" alt="jQuery icon" />jQuery
+              </li>
+              <li><i class="fab fa-react" aria-label="React icon"></i>React</li>
+              <li>
+                <img
+                  src="./images/firebaseIcon.svg"
+                  alt="Firebase icon"
+                />Firebase
+              </li>
+              <li><i class="fab fa-git-alt" aria-label="Git icon"></i>Git</li>
+              <li>
+                <i class="fab fa-github" aria-label="GitHub icon"></i>Github
+              </li>
+              <li>
+                <img src="./images/VSIcon.svg" alt="VS code icon" />VS Code
+              </li>
+              <li>
+                <i
+                  class="fas fa-universal-access"
+                  aria-label="Accessibility icon"
+                ></i
+                >A11y
+              </li>
+              <li>
+                <i
+                  class="fas fa-tablet-alt"
+                  aria-label="Responsiveness icon"
+                ></i
+                >Responsive
+              </li>
             </ul>
           </div>
         </section>
@@ -193,7 +224,7 @@
             <div class="projectItem">
               <div class="imgContainer">
                 <img
-                  src="./images/supremeFries.svg"
+                  src="./images/salut.svg"
                   alt="Open laptop with a placeholder image of the Salut website"
                 />
               </div>
@@ -210,10 +241,14 @@
                 </p>
                 <div class="links">
                   <div class="button">
-                    <a href="">Live</a>
+                    <a href="https://shmedi.github.io/lizzEddyProjectFour/"
+                      >Live</a
+                    >
                   </div>
                   <div class="button">
-                    <a href="">GitHub</a>
+                    <a href="https://github.com/Shmedi/lizzEddyProjectFour/"
+                      >GitHub</a
+                    >
                   </div>
                 </div>
               </div>
@@ -255,7 +290,7 @@
             <div class="projectItem">
               <div class="imgContainer">
                 <img
-                  src="./images/spltr.svg"
+                  src="./images/moribus.svg"
                   alt="Open laptop with a placeholder image of the Moribus website"
                 />
               </div>
@@ -274,10 +309,10 @@
                 </p>
                 <div class="links">
                   <div class="button">
-                    <a href="">Live</a>
+                    <a href="https://shmedi.github.io/Moribus/">Live</a>
                   </div>
                   <div class="button">
-                    <a href="">GitHub</a>
+                    <a href="https://github.com/Shmedi/Moribus">GitHub</a>
                   </div>
                 </div>
               </div>
@@ -294,33 +329,36 @@
               <ul class="socialContainer">
                 <li>
                   <a href="https://twitter.com/EduardTupy"
-                    ><i class="fab fa-twitter"></i
+                    ><i class="fab fa-twitter" aria-label="Twitter icon"></i
                   ></a>
                 </li>
                 <li>
                   <a href="https://medium.com/@eduard.tupy"
-                    ><i class="fab fa-medium"></i
+                    ><i class="fab fa-medium" aria-label="Medium blog icon"></i
                   ></a>
                 </li>
                 <li>
                   <a href="https://calendly.com/eduard-tupy/30min"
-                    ><i class="far fa-calendar-alt"></i
+                    ><i
+                      class="far fa-calendar-alt"
+                      aria-label="Calendly icon"
+                    ></i
                   ></a>
                 </li>
                 <li>
                   <a href="https://github.com/Shmedi"
-                    ><i class="fab fa-github"></i
+                    ><i class="fab fa-github" aria-label="GitHub icon"></i
                   ></a>
                 </li>
                 <li>
                   <a href="https://www.linkedin.com/in/eduard-tupy/"
-                    ><i class="fab fa-linkedin"></i
+                    ><i class="fab fa-linkedin" aria-label="LinkedIn icon"></i
                   ></a>
                 </li>
               </ul>
               <!-- Contact Form -->
               <form method="POST" action="formHandler.php">
-                <label for="name"></label>
+                <label class="srOnly" for="name">Name</label>
                 <input
                   type="text"
                   id="name"
@@ -329,7 +367,7 @@
                   required
                 />
 
-                <label for="email"></label>
+                <label class="srOnly" for="email">Email</label>
                 <input
                   type="email"
                   id="email"
@@ -338,7 +376,7 @@
                   required
                 />
 
-                <label for="message"></label>
+                <label class="srOnly" for="message">Message</label>
                 <div class="textarea">
                   <textarea
                     name="message"

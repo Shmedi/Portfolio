@@ -1,3 +1,5 @@
+// Keyframes
+
 @keyframes bounceRight {
   0% {
     transform: translateX(600px);
@@ -72,10 +74,25 @@
   }
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// Animation
+
 .logoRight {
   animation: 1.1s bounceRight 0.2s both;
 }
 
 .logoLeft {
   animation: 1.1s bounceLeft 1s both;
+}
+
+.rotate {
+  animation: 19s rotation linear infinite both;
 }
