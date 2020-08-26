@@ -849,7 +849,8 @@ header .headerImage p {
 
 .profile .intro {
   width: 50%;
-  padding-top: 35%;
+  margin-top: 15%;
+  padding-top: 25%;
 }
 
 .profile .intro h2 {
@@ -1185,6 +1186,7 @@ header .headerImage p {
   }
   .profile .intro {
     width: 100%;
+    margin-top: 0;
     padding-top: 40px;
     text-align: center;
   }
