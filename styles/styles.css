@@ -306,7 +306,7 @@ section {
 }
 
 a,
-button,
+.button,
 input,
 li,
 i {
@@ -1021,7 +1021,9 @@ header .headerImage p {
   padding: 15px 0;
 }
 
-.projects .projectItem button {
+.projects .projectItem .button {
+  display: inline-block;
+  text-align: center;
   padding: 10px 0;
   width: 140px;
   margin-top: 20px;
@@ -1034,20 +1036,19 @@ header .headerImage p {
   border-radius: 10px;
 }
 
-.projects .projectItem button:nth-child(2n) {
+.projects .projectItem .button:nth-child(2n) {
   margin-left: 20px;
 }
 
-.projects .projectItem button:hover, .projects .projectItem button:focus, .projects .projectItem button:active {
+.projects .projectItem .button:hover, .projects .projectItem .button:focus, .projects .projectItem .button:active {
   cursor: pointer;
   letter-spacing: 0.1em;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.projects .projectItem button a {
+.projects .projectItem .button a {
   color: #000;
-  padding: 8px 40px;
 }
 
 .contact {
@@ -1090,7 +1091,7 @@ header .headerImage p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 2px solid #c0ff33;
-  background-color: #0f0f0f;
+  background-color: transparent;
   color: #fff;
   width: 100%;
   padding: 15px;
@@ -1279,10 +1280,10 @@ header .headerImage p {
   .container form .buttonStyle {
     width: 100%;
   }
-  .projects .projectItem button {
+  .projects .projectItem .button {
     width: 100%;
   }
-  .projects .projectItem button:nth-child(2n) {
+  .projects .projectItem .button:nth-child(2n) {
     margin-left: 0;
   }
   .projects .projectItem .description {

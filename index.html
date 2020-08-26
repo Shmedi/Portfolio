@@ -43,27 +43,30 @@
       src="https://kit.fontawesome.com/c53f7e277a.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Document Title -->
     <title>Eduard.Tupy</title>
   </head>
   <body>
+    <!-- Header -->
     <header>
       <div class="wrapper">
         <div class="headerNav">
           <div class="logoContainer">
             <img src="./images/logo.png" alt="Geometric logo" />
           </div>
+          <!-- Drop-down Navigation -->
           <div class="navContainer">
             <input class="toggle" id="toggle" name="toggle" type="checkbox" />
 
             <label class="toggleContainer" for="toggle">
-              <span class="button buttonToggle"></span>
+              <span role="button" class="buttonToggle"></span>
             </label>
 
             <nav class="nav">
-              <a class="navItem" href="#one">About</a>
-              <a class="navItem" href="#two">Skills</a>
-              <a class="navItem" href="#three">Projects</a>
-              <a class="navItem" href="#four">Contact</a>
+              <a class="navItem" href="#about">About</a>
+              <a class="navItem" href="#skills">Skills</a>
+              <a class="navItem" href="#projects">Projects</a>
+              <a class="navItem" href="#contact">Contact</a>
             </nav>
           </div>
         </div>
@@ -76,8 +79,10 @@
       </div>
     </header>
 
+    <!-- Main -->
     <main>
       <div class="wrapper">
+        <!-- About Section -->
         <section>
           <div class="about">
             <div class="profile">
@@ -87,7 +92,7 @@
                   alt="Portrait photo of designer"
                 />
               </div>
-              <div class="intro" id="one">
+              <div class="intro" id="about">
                 <h2><span class="underline">About</span></h2>
                 <p>
                   I am a front-end developer with an eye for design which aids
@@ -120,13 +125,14 @@
               <img
                 class="triangleFour"
                 src="./images/development2.png"
-                alt=""
+                alt="Code written on a text editor"
               />
             </div>
           </div>
         </section>
 
-        <section id="two">
+        <!-- Skills Section -->
+        <section id="skills">
           <div class="skills">
             <h2><span class="underline">Skills</span></h2>
             <ul class="skillContainer">
@@ -146,10 +152,12 @@
           </div>
         </section>
 
-        <section id="three">
+        <!-- Projects Section -->
+        <section id="projects">
           <div class="projects">
             <h2><span class="underline">Projects</span></h2>
 
+            <!-- Project One -->
             <div class="projectItem">
               <div class="imgContainer">
                 <img
@@ -161,26 +169,27 @@
                 <p class="languages">HTML | SCSS | JavaScript | jQuery</p>
                 <h3>Supreme Fries</h3>
                 <p class="description">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-                  vel repellendus necessitatibus harum excepturi optio ipsa
-                  quasi sed quo, odio aliquam minus repudiandae fuga maiores
-                  explicabo? Eveniet, ducimus? Dignissimos, magnam.
+                  A simple application where the user is presented with a bed of
+                  fries and a button to generate a random topping that could be
+                  common or unorthodox, comes with snarky remarks based on the
+                  result.
                 </p>
                 <div class="links">
-                  <button>
+                  <div class="button">
                     <a href="https://shmedi.github.io/eduardTupyProjectThree/"
                       >Live</a
                     >
-                  </button>
-                  <button>
+                  </div>
+                  <div class="button">
                     <a href="https://github.com/Shmedi/eduardTupyProjectThree"
                       >GitHub</a
                     >
-                  </button>
+                  </div>
                 </div>
               </div>
             </div>
 
+            <!-- Project Two -->
             <div class="projectItem">
               <div class="imgContainer">
                 <img
@@ -194,22 +203,23 @@
                 </p>
                 <h3>Salut</h3>
                 <p class="description">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-                  vel repellendus necessitatibus harum excepturi optio ipsa
-                  quasi sed quo, odio aliquam minus repudiandae fuga maiores
-                  explicabo? Eveniet, ducimus? Dignissimos, magnam.
+                  A cocktail generating app made in conjunction with another
+                  developer which presents the user with 3 questions, then
+                  fetches a drink for them based on their choices. The user can
+                  then reset and go for another cocktail.
                 </p>
                 <div class="links">
-                  <button>
+                  <div class="button">
                     <a href="">Live</a>
-                  </button>
-                  <button>
+                  </div>
+                  <div class="button">
                     <a href="">GitHub</a>
-                  </button>
+                  </div>
                 </div>
               </div>
             </div>
 
+            <!-- Project Three -->
             <div class="projectItem">
               <div class="imgContainer">
                 <img
@@ -221,26 +231,27 @@
                 <p class="languages">React | CSS | JavaScript | Firebase</p>
                 <h3>Spltr</h3>
                 <p class="description">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-                  vel repellendus necessitatibus harum excepturi optio ipsa
-                  quasi sed quo, odio aliquam minus repudiandae fuga maiores
-                  explicabo? Eveniet, ducimus? Dignissimos, magnam.
+                  This application is great for bill splitting. Using a math
+                  method, Spltr will take your group size, the bill total, tip
+                  percentage, and split the bill evenly between all members.
+                  Previous bills are saved and can be removed.
                 </p>
                 <div class="links">
-                  <button>
+                  <div class="button">
                     <a href="https://shmedi.github.io/eduardTupyProjectFive/"
                       >Live</a
                     >
-                  </button>
-                  <button>
+                  </div>
+                  <div class="button">
                     <a href="https://github.com/Shmedi/eduardTupyProjectFive"
                       >GitHub</a
                     >
-                  </button>
+                  </div>
                 </div>
               </div>
             </div>
 
+            <!-- Project Four -->
             <div class="projectItem">
               <div class="imgContainer">
                 <img
@@ -255,28 +266,31 @@
                 </p>
                 <h3>Moribus</h3>
                 <p class="description">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-                  vel repellendus necessitatibus harum excepturi optio ipsa
-                  quasi sed quo, odio aliquam minus repudiandae fuga maiores
-                  explicabo? Eveniet, ducimus? Dignissimos, magnam.
+                  A group project for an ethical make-up website that takes the
+                  user's search parameter and returns products that match the
+                  input from an API. Users can then click on an item for more
+                  detailed information, as well ass being able to leave a review
+                  and buy the product through a link.
                 </p>
                 <div class="links">
-                  <button>
+                  <div class="button">
                     <a href="">Live</a>
-                  </button>
-                  <button>
+                  </div>
+                  <div class="button">
                     <a href="">GitHub</a>
-                  </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="four">
+        <!-- Contact Section -->
+        <section id="contact">
           <div class="contact">
             <h2><span class="underline">Contact</span></h2>
             <div class="container">
+              <!-- Social Links -->
               <ul class="socialContainer">
                 <li>
                   <a href="https://twitter.com/EduardTupy"
@@ -304,9 +318,16 @@
                   ></a>
                 </li>
               </ul>
-              <form action="mailto:eduard.tupy@hotmail.com?">
+              <!-- Contact Form -->
+              <form method="POST" action="formHandler.php">
                 <label for="name"></label>
-                <input type="text" id="name" name="name" placeholder="Name" />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
 
                 <label for="email"></label>
                 <input
@@ -314,6 +335,7 @@
                   id="email"
                   name="email"
                   placeholder="Email"
+                  required
                 />
 
                 <label for="message"></label>
@@ -323,6 +345,7 @@
                     id="message"
                     placeholder="Message"
                     maxlength="255"
+                    required
                   ></textarea>
                 </div>
 
@@ -334,6 +357,7 @@
       </div>
     </main>
 
+    <!-- Footer -->
     <footer>
       <div class="footer">
         <p>Copyright &copy; 2020</p>
