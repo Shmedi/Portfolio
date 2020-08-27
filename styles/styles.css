@@ -1076,6 +1076,7 @@ header .headerImage p {
 }
 
 .projects .projectItem .button a {
+  padding: 10px 30px;
   color: #000;
 }
 
@@ -1313,6 +1314,9 @@ header .headerImage p {
   }
   .projects .projectItem .button:nth-child(2n) {
     margin-left: 0;
+  }
+  .projects .projectItem .button a {
+    padding: 10px 35%;
   }
   .projects .projectItem .description {
     text-align: left;
