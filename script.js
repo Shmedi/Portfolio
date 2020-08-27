@@ -18,7 +18,8 @@ shmedi.objectFade = () => {
   $(window).scroll(function () {
     const windowBottom = $(this).scrollTop() + $(this).innerHeight();
     $(".projectItem").each(function () {
-      const objectBottom = $(this).offset().top + $(this).outerHeight();
+      const objectBottom =
+        $(this).offset().top + $(".imgContainer").outerHeight();
 
       if (objectBottom < windowBottom) {
         if ($(this).css("opacity") == 0) {
