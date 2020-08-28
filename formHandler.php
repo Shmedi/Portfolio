@@ -17,5 +17,5 @@
   $to = "eduard.tupy@hotmail.com";
 
   mail($to, $email_subject, $email_body);
-  header("Location: index.html");
+  header("Location: confirm.html");
 ?>

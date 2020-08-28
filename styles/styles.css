@@ -1200,6 +1200,54 @@ header .headerImage p {
   font-size: 1.2rem;
 }
 
+.confirm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 100vh;
+}
+
+.confirm h1 {
+  color: #c0ff33;
+}
+
+.confirm p {
+  padding: 20px 0;
+}
+
+.confirm a {
+  color: #000;
+}
+
+.confirm .buttonStyle {
+  padding: 10px 0;
+  width: 250px;
+  margin-top: 20px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border: none;
+  color: #000;
+  background-color: #b4b4b4;
+  border-radius: 10px;
+}
+
+.confirm .buttonStyle:hover, .confirm .buttonStyle:focus, .confirm .buttonStyle:active {
+  cursor: pointer;
+  letter-spacing: 0.1em;
+}
+
 @media (max-width: 1000px) {
   .profile {
     -webkit-box-orient: vertical;
