@@ -947,8 +947,8 @@ header .headerImage p {
   margin-bottom: 200px;
   border: 5px solid #0f0f0f;
   border-radius: 40px;
-  -webkit-box-shadow: 0 0 60px #c0ff33;
-          box-shadow: 0 0 60px #c0ff33;
+  -webkit-box-shadow: 0 0 35px #c0ff33;
+          box-shadow: 0 0 35px #c0ff33;
 }
 
 .skills h2 {
