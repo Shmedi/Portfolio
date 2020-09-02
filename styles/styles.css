@@ -980,7 +980,7 @@ header .headerImage p {
       -ms-flex-align: center;
           align-items: center;
   padding: 40px;
-  color: #c0ff33;
+  color: #646464;
 }
 
 .skillContainer li:hover {
@@ -1339,14 +1339,14 @@ header .headerImage p {
     padding: 0 20px 40px;
   }
   .skillContainer li {
-    padding: 10px;
+    padding: 15px;
     font-size: 0;
   }
   .skillContainer li i {
-    font-size: 4rem;
+    font-size: 5.5rem;
   }
   .skillContainer li img {
-    height: 40px;
+    height: 55px;
   }
   .profile,
   .skills,
