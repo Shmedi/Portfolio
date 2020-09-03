@@ -23,6 +23,10 @@
     }
   }
 
+  .skillContainer li {
+    width: calc(100% / 4);
+  }
+
   .projects {
     .projectItem {
       display: block;
@@ -64,10 +68,9 @@
     }
   }
 
-  .skillContainer {
-    li {
-      padding: 20px;
-    }
+  .skillContainer li {
+    width: calc(100% / 3);
+    padding: 20px 0;
   }
 
   .container {
@@ -114,10 +117,10 @@
   }
 
   .skillContainer {
-    padding: 0 20px 40px;
+    padding: 0 20px 30px;
     li {
-      padding: 15px;
-      font-size: 0;
+      padding: 10px 0;
+      font-size: 1.5rem;
       i {
         font-size: 5.5rem;
       }

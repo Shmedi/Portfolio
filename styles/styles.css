@@ -965,7 +965,7 @@ header .headerImage p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 40px 80px;
+  padding: 0 40px 50px;
 }
 
 .skillContainer li {
@@ -979,7 +979,8 @@ header .headerImage p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px;
+  padding: 40px 0;
+  width: calc(100% / 6);
   color: #646464;
 }
 
@@ -1271,6 +1272,9 @@ header .headerImage p {
   .about .triangleContainer {
     top: -8%;
   }
+  .skillContainer li {
+    width: calc(100% / 4);
+  }
   .projects .projectItem {
     display: block;
     text-align: center;
@@ -1303,7 +1307,8 @@ header .headerImage p {
     width: 100%;
   }
   .skillContainer li {
-    padding: 20px;
+    width: calc(100% / 3);
+    padding: 20px 0;
   }
   .container {
     margin: 0;
@@ -1336,11 +1341,11 @@ header .headerImage p {
     padding: 40px 0;
   }
   .skillContainer {
-    padding: 0 20px 40px;
+    padding: 0 20px 30px;
   }
   .skillContainer li {
-    padding: 15px;
-    font-size: 0;
+    padding: 10px 0;
+    font-size: 1.5rem;
   }
   .skillContainer li i {
     font-size: 5.5rem;
