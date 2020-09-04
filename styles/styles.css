@@ -946,13 +946,13 @@ header .headerImage p {
   text-align: center;
   margin-bottom: 200px;
   border: 5px solid #0f0f0f;
-  border-radius: 40px;
+  border-radius: 50px;
   -webkit-box-shadow: 0 0 35px #c0ff33;
           box-shadow: 0 0 35px #c0ff33;
 }
 
 .skills h2 {
-  padding: 80px 0 40px;
+  padding: 60px 0 40px;
   font-size: 4rem;
 }
 
@@ -1338,7 +1338,7 @@ header .headerImage p {
     text-align: left;
   }
   .skills h2 {
-    padding: 40px 0;
+    padding: 30px 0;
   }
   .skillContainer {
     padding: 0 20px 30px;
