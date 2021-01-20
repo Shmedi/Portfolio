@@ -1139,6 +1139,7 @@ header .headerImage p {
 @media (max-width: 500px) {
   header .headerImage h1 {
     padding-top: 210px;
+    text-shadow: 2.4px 1.8px 0 #c0ff33;
   }
   header .headerImage p {
     padding: 0;
