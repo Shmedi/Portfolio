@@ -9,8 +9,28 @@
   }
 }
 
+@keyframes slide {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+}
+
 // Animation
 
 .rotate {
   animation: 19s rotation linear infinite both;
+}
+
+.slideDown {
+  animation: 1.5s slide 3250ms ease-out both;
 }

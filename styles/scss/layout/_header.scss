@@ -176,7 +176,15 @@ header {
       color: $altTextColor;
       font-size: clamp(4.3rem, 8vw, 9rem);
       text-shadow: 5px 3px 0 $accentColor;
-      padding-top: 180px;
+      padding-top: 160px;
+    }
+    p {
+      font-family: $baseFont;
+      color: $primaryColor;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      padding-left: 7px;
     }
   }
 }
