@@ -26,6 +26,10 @@
       transform: scale(1.2);
     }
 
+    .brighter {
+      filter: grayscale(100%) brightness(200%);
+    }
+
     img {
       filter: grayscale(100%);
       width: auto;

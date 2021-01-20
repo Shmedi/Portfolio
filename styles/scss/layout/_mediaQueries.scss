@@ -19,7 +19,7 @@
 
   .about {
     .triangleContainer {
-      top: -8%;
+      display: none;
     }
   }
 
@@ -50,8 +50,9 @@
 @media (max-width: 790px) {
   header {
     .headerImage {
+      text-align: center;
       h1 {
-        padding-top: 180px;
+        padding-top: 200px;
       }
     }
   }
@@ -76,20 +77,13 @@
 @media (max-width: 500px) {
   header {
     .headerImage {
-      text-align: center;
       h1 {
-        padding-top: 200px;
+        padding-top: 210px;
       }
 
       p {
         padding: 0;
       }
-    }
-  }
-
-  .about {
-    .triangleContainer {
-      display: none;
     }
   }
 
