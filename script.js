@@ -8,7 +8,7 @@ anime.timeline({loop: false})
     targets: '.ml3 .letter',
     opacity: [0,1],
     easing: "easeInOutQuad",
-    duration: 3250,
+    duration: 1500,
     delay: (el, i) => 150 * (i+1)
   });
 

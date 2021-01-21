@@ -399,8 +399,8 @@ img {
 }
 
 .slideDown {
-  -webkit-animation: 1.5s slide 3250ms ease-out both;
-          animation: 1.5s slide 3250ms ease-out both;
+  -webkit-animation: 1.5s slide 2000ms ease-out both;
+          animation: 1.5s slide 2000ms ease-out both;
 }
 
 header {
@@ -1139,7 +1139,7 @@ header .headerImage p {
 @media (max-width: 500px) {
   header .headerImage h1 {
     padding-top: 210px;
-    text-shadow: 2.4px 1.8px 0 #c0ff33;
+    text-shadow: 2.5px 2.5px 0 #c0ff33;
   }
   header .headerImage p {
     padding: 0;
