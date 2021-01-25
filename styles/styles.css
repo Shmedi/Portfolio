@@ -399,8 +399,8 @@ img {
 }
 
 .slideDown {
-  -webkit-animation: 1.5s slide 2000ms ease-out both;
-          animation: 1.5s slide 2000ms ease-out both;
+  -webkit-animation: 1s slide 2000ms ease-out both;
+          animation: 1s slide 2000ms ease-out both;
 }
 
 header {
