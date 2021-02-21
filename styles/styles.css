@@ -852,7 +852,7 @@ img {
           animation: 19s rotation linear infinite both;
 }
 
-.slideDown {
+.ready .slideDown {
   -webkit-animation: 1s slide 1750ms ease-out both;
           animation: 1s slide 1750ms ease-out both;
 }
@@ -1664,7 +1664,7 @@ header .headerImage p {
   width: 100vw;
   top: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
   background-color: #0f0f0f;
 }
 

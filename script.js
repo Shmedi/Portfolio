@@ -10,16 +10,22 @@ textWrapper.innerHTML = textWrapper.textContent.replace(
   "<span class='letter'>$&</span>"
 );
 
-anime.timeline({ loop: false }).add({
-  targets: ".ml3 .letter",
-  opacity: [0, 1],
-  easing: "easeInOutQuad",
-  duration: 1000,
-  delay: (el, i) => 150 * (i + 1),
+document.addEventListener("DOMContentLoaded", () => {
+  anime.timeline({ loop: false }).add({
+    targets: ".ml3 .letter",
+    opacity: [0, 1],
+    easing: "easeInOutQuad",
+    duration: 1000,
+    delay: (el, i) => 150 * (i + 1),
+  });
 });
 
+window.onload = () => {
+  document.body.classList.add("ready");
+};
+
 shmedi.navClick = () => {
-  $(document).on("click", 'a[href^="#"]', function () {
+  $(document).on("click", 'a[href^="#"]', () => {
     $("html, body")
       .stop()
       .animate(
@@ -33,7 +39,7 @@ shmedi.navClick = () => {
 };
 
 shmedi.objectFade = () => {
-  $(window).scroll(function () {
+  $(window).scroll(() => {
     const windowBottom = $(this).scrollTop() + $(this).innerHeight();
     $(".projectItem").each(function () {
       const objectBottom =
@@ -52,7 +58,7 @@ shmedi.objectFade = () => {
   });
 };
 
-$(function () {
+$(() => {
   shmedi.navClick();
   shmedi.objectFade();
 });
