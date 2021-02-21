@@ -1,5 +1,50 @@
 // Keyframes
 
+@for $i from 1 through 6 {
+  @keyframes preLoadShow-#{$i} {
+    from {
+      transform: rotateZ(60 * $i + deg) rotateY(-90deg) rotateX(0deg);
+      border-left-color: $fadeColor;
+    }
+  }
+  @keyframes preLoadHide-#{$i} {
+    to {
+      transform: rotateZ(60 * $i + deg) rotateY(-90deg) rotateX(0deg);
+      border-left-color: $fadeColor;
+    }
+  }
+
+  @keyframes preLoadCycle-#{$i} {
+    $startIndex: $i * 5;
+    $reverseIndex: (80 - $i * 5);
+
+    #{$startIndex * 1%} {
+      transform: rotateZ(60 * $i + deg) rotateY(90deg) rotateX(0deg);
+      border-left-color: $fadeColor;
+    }
+    #{$startIndex + 7%},
+    #{$reverseIndex * 1%} {
+      transform: rotateZ(60 * $i + deg) rotateY(0) rotateX(0deg);
+      border-left-color: $secondaryColor;
+    }
+
+    #{$reverseIndex + 7%},
+    100% {
+      transform: rotateZ(60 * $i + deg) rotateY(90deg) rotateX(0deg);
+      border-left-color: $fadeColor;
+    }
+  }
+}
+
+@keyframes preLoadFlip {
+  0% {
+    transform: rotateY(0deg) rotateZ(-60deg);
+  }
+  100% {
+    transform: rotateY(360deg) rotateZ(-60deg);
+  }
+}
+
 @keyframes rotation {
   0% {
     transform: rotate(0);
@@ -32,5 +77,5 @@
 }
 
 .slideDown {
-  animation: 1s slide 2000ms ease-out both;
+  animation: 1s slide 1750ms ease-out both;
 }
