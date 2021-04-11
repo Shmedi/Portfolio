@@ -1391,14 +1391,15 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  top: 150px;
+  top: 125px;
   right: 40px;
 }
 
 .socialContainer i {
-  margin: 10px 0;
-  font-size: 4rem;
-  color: gray;
+  margin: 20px 0;
+  font-size: 3.4rem;
+  color: #606060;
+  text-shadow: 0 0 5px lightgray;
 }
 
 .socialContainer i:hover, .socialContainer i:focus, .socialContainer i:active {
@@ -1594,7 +1595,7 @@ header {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
   .projects .projectItem .button {
     width: 100%;
