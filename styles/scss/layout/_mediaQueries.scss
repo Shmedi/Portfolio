@@ -134,6 +134,13 @@
     }
   }
 
+  .socialContainer {
+    position: static;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+  }
+
   .projects {
     .projectItem {
       .button {

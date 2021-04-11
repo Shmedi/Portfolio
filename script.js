@@ -2,6 +2,10 @@ $(window).on("load", () => {
   $(".loaderWrapper").fadeOut("slow");
 });
 
+document
+  .getElementById("year")
+  .appendChild(document.createTextNode(new Date().getFullYear()));
+
 const shmedi = {};
 
 const textWrapper = document.querySelector(".ml3");
@@ -10,7 +14,9 @@ textWrapper.innerHTML = textWrapper.textContent.replace(
   "<span class='letter'>$&</span>"
 );
 
-document.addEventListener("DOMContentLoaded", () => {
+window.onload = () => {
+  document.body.classList.add("ready");
+
   anime.timeline({ loop: false }).add({
     targets: ".ml3 .letter",
     opacity: [0, 1],
@@ -18,10 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 1000,
     delay: (el, i) => 150 * (i + 1),
   });
-});
-
-window.onload = () => {
-  document.body.classList.add("ready");
 };
 
 shmedi.navClick = () => {
