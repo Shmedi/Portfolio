@@ -13,11 +13,11 @@ header {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 125px;
+  top: 115px;
   right: 40px;
   i {
-    margin: 20px 0;
-    font-size: 3.4rem;
+    margin: 25px 0;
+    font-size: 3rem;
     color: $socialIcon;
     text-shadow: 0 0 5px lightgray;
     &:hover,
